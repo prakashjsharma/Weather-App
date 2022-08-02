@@ -19,12 +19,14 @@ const weatherCard = ({ data }) => {
             switch (weathertype) {
                 case "Clouds": setWeatherSate('wi-day-cloudy');
                     break;
-                case "Haze": setWeatherSate('wi-foggy');
+                case "Haze": setWeatherSate('wi-day-fog');
                     break;
                 case "Clear": setWeatherSate('wi-day-sunny');
                     break;
-                case "Mist": setWeatherSate('wi-dust');
+                case "Mist": setWeatherSate('wi-smog');
                     break;
+                    case "Rain": setWeatherSate('wi-day-rain');
+                    break;    
 
                 default:
                     setWeatherSate('wi-day-sunny');
@@ -40,7 +42,7 @@ const weatherCard = ({ data }) => {
         <>
             <article className='widget'>
                 <div className='weatherIcon'>
-                    <i className={`wi ${weatherState} `}></i>
+                    <i className={`wi ${weatherState}`}></i>
                 </div>
                 <div className='weatherInfo'>
                     <div className='temperature'>

@@ -123,6 +123,9 @@ body {
   /* background-color: blanchedalmond; */
 }
 
+.wi {
+  color: #e14646;
+}
 .widget .extra-temp .extra-info-leftside {
   text-align: left;
   font-weight: 600;
